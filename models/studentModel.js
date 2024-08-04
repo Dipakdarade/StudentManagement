@@ -11,7 +11,7 @@ const studentSchema = new mongoose.Schema(
             type:String,
             required:true,
         },
-        class:{
+        year:{
             type:String,
             required:true,
         },
@@ -21,6 +21,11 @@ const studentSchema = new mongoose.Schema(
         age:{
             type:Number,
             required:true,
+    },
+    remark:{
+        type:String,
+        required:true,
+        default:'Average'
     }
 
 }

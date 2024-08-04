@@ -1,35 +1,25 @@
-const { default: mongoose } = require("mongoose");
-const Student = require('./models/studentModel');
+// const { default: mongoose } = require("mongoose");
+// const Student = require('./models/studentModel');
 
-mongoose.connect('mongodb://localhost:27017/studentDB')
-.then(()=>{"DB connected"})
-.catch((e)=>console.log(error));
+// mongoose.connect('mongodb://localhost:27017/studentDB')
+// .then(()=>{"DB connected"})
+// .catch((e)=>console.log(error));
 
-const dummy_students = [
-    {
+// const dummy_students = [
+//     {
         
 
-            name : 'Dipak',
-            email:'daradedipak805@gmil.com',
-            class:'18th',
-            grade:'A',
-            age:26
-        
+//             name : 'Dipak',
+//             email:'daradedipak805@gmil.com',
+//             year:'18th',
+//             grade:'A',
+//             age:26
+//     }
+// ]
+// async  function seedDB(){
+// await  Student.deleteMany({});
+//  await Student.insertMany(dummy_students);
+//  console.log('DB seeded!')
 
-    },
-    {
-        name : 'Darade',
-        email:'daradedipak699@gmil.com',
-        class:'18th',
-        grade:'A',
-        age:26
-     
-    }
-]
-async  function seedDB(){
-await  Student.deleteMany({});
- await Student.insertMany(dummy_students);
- console.log('DB seeded!')
-
-}
-seedDB();
+// }
+// seedDB();
